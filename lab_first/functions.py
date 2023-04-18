@@ -14,4 +14,11 @@ def calc(first_num, second_num, str):
         return first_num / second_num
     else:
         return "error("
-    
+
+def check_num(num :str):
+    while True:
+        try:
+            res = float(num)
+            return res
+        except Exception:
+            num = input("Input num: ")
