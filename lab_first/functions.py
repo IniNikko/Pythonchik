@@ -22,3 +22,9 @@ def check_num(num :str):
             return res
         except Exception:
             num = input("Input num: ")
+
+def even_num(list_num):
+    return [list_even_num for list_even_num in list_num if list_even_num % 2 == 0]
+
+def check_list(list_num):
+    return [int(list_check) for list_check in list_num if list_check.isdigit()]
